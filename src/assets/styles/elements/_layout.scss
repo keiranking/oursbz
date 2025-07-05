@@ -1,0 +1,27 @@
+@use "../settings/other" as *;
+
+html {
+  background-color: var(--background-color);
+  box-sizing: border-box;
+  scroll-padding-top: var(--spacing);
+
+  @media(min-width: $breakpoint--desktop) {
+    scroll-padding-top: var(--spacing--double);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: fit-content;
+}
+
+body {
+  margin: 0;
+}

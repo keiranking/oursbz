@@ -1,0 +1,36 @@
+@use "../settings/other" as *;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--spacing);
+}
+
+.section--bordered {
+  border-bottom: var(--border);
+  border-top: var(--border);
+}
+
+.section--padded {
+  padding-bottom: var(--spacing);
+  padding-top: var(--spacing);
+
+  @media(min-width: $breakpoint--mobile) {
+    padding-bottom: var(--spacing--double);
+    padding-top: var(--spacing--double);
+  }
+}
+
+.section__content {
+  max-width: var(--width--content);
+  margin: 0 auto;
+  width: 100%;
+
+  & + & {
+    margin-top: var(--spacing--half);
+  }
+}
+
+.section__content--slim {
+  max-width: var(--width--article);
+}

@@ -1,0 +1,21 @@
+{
+  "name": "oursbz",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "build": "sass src/assets/styles:_site/css & eleventy",
+    "start": "npx sass src/assets/styles:_site/css --watch & npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-navigation": "^1.0.4",
+    "luxon": "^3.6.1",
+    "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "sass": "^1.89.2"
+  }
+}

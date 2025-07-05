@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Run this script to setup the app
+
+# Exit if any subcommand fails
+set -e
+
+# Set up Node.js dependencies
+npm install
+
+# Set up development environment config
+# if [ ! -f .env ]; then
+#   cp .env.sample .env
+# fi

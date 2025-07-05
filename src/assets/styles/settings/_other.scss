@@ -1,0 +1,81 @@
+:root {
+  // Colors
+  --background-color: #1e1e1e;
+  --content-color: #ffffff;
+  --content-color-rgb: 51, 51, 51;
+  --accent-color: var(--content-color);
+
+  --action-color: var(--content-color);
+  --action-color--hover: rgba(var(--content-color-rgb), 0.75);
+  --highlight-color: rgba(var(--content-color-rgb), 0.066);
+  --subtle-color: rgba(var(--content-color-rgb), 0.33);
+
+  // Typography
+  --font-family: "Ours Sans", system-ui, sans-serif;
+  --heading-font-family: var(--font-family);
+  --alt-font-family: var(--font-family);
+  --mono-font-family: $font-stack-consolas;
+
+  --font-weight--thin: 100;
+  --font-weight--extra-light: 200;
+  --font-weight--light: 300;
+  --font-weight--normal: 400;
+  --font-weight--medium: 500;
+  --font-weight--semi-bold: 600;
+  --font-weight--bold: 700;
+  --font-weight--extra-bold: 800;
+  --font-weight--black: 900;
+
+  --font-weight--body: var(--font-weight--normal);
+
+  // Font Sizes
+  --font-size--small: 0.8rem;
+  --font-size: 1rem;
+  --font-size--medium: 1.2rem;
+  --font-size--large: 1.6rem;
+  --font-size--xlarge: 2.4rem;
+  --font-size--xxlarge: 3.2rem;
+
+  // Letter Spacing
+  --letter-spacing--tight: -0.02rem;
+  --letter-spacing--loose: 0.2rem;
+
+  // Line heights
+  --line-height: 1.5;
+  --line-height--tight: 1.2;
+  --line-height--unleaded: 1;
+
+  // Other Sizes
+  --border-radius: 0.25rem;
+
+  --spacing--quadruple: 6.0rem;
+  --spacing--double: 3.0rem;
+  --spacing: 1.6rem;
+  --spacing--half: 0.8rem;
+  --spacing--quarter: 0.4rem;
+  --spacing--eighth: 0.2rem;
+  --spacing--sixteenth: 0.1rem;
+
+  --width--article: 32rem;
+  --width--content: 48rem;
+
+  // Borders
+  --border-width: 0.05rem;
+  --border-width--thick: 0.1rem;
+  --border: var(--border-width) solid currentColor;
+  --border--thick: var(--border-width--thick) solid currentColor;
+
+  // Focus
+  --focus-outline-width: 0.1875rem;
+  --focus-outline-offset: 0.125rem;
+  --focus-outline: var(--focus-outline-width) solid #{var(--action-color)};
+
+  // Animations
+  --duration: 150ms;
+  --timing: ease;
+}
+
+// Breakpoints
+$breakpoint--mobile: 32rem;
+$breakpoint--desktop: 48rem;
+$breakpoint--large-screen: 60rem;

@@ -1,0 +1,17 @@
+.u-link--incognito {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: from-font;
+    text-underline-offset: var(--spacing--sixteenth);
+  }
+}
+
+.u-link--subtle {
+  text-decoration-color: var(--subtle-color);
+
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}

@@ -1,0 +1,13 @@
+.u-log {
+  background: rgb(43, 42, 50);
+  color: rgb(177, 177, 179);
+  font-family: 'Input Mono', 'Courier New', Courier, monospace;
+  font-size: var(--font-size--small);
+  left: 0;
+  overflow-x: scroll;
+  padding: var(--spacing--quarter);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}

@@ -1,0 +1,17 @@
+{%- if page.url != "/" %}
+  <header class="site__header section">
+    <nav class="section__content section__content--slim">
+      [Header]
+    </nav>
+  </header>
+{%- endif %}
+
+{# <header>
+  <h1><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+
+  <ul>
+  {%- for entry in collections.all | eleventyNavigation %}
+    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+  {%- endfor %}
+  </ul>
+</header> #}
