@@ -4,7 +4,7 @@ backend:
   branch: main
   identity_url: https://auth.decapbridge.com/sites/d037644e-743f-4f7a-be2d-ded20d2d79a8
   gateway_url: https://gateway.decapbridge.com
-logo_url: https://business-ours.netlify.app/images/logo/logo-stacked-outline.svg
+logo_url: images/login-logo.svg
 media_folder: "content/images"
 public_folder: "/images"
 publish_mode: editorial_workflow
