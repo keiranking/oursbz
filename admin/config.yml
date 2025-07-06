@@ -9,7 +9,7 @@ media_folder: "content/images"
 public_folder: "/images"
 publish_mode: editorial_workflow
 search: false
-site_url: https://business-ours.netlify.app
+site_url: https://ours.bz
 slug:
   encoding: "ascii"
   clean_accents: true

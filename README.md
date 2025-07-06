@@ -7,8 +7,7 @@ A static site, built with [11ty], for [Business Ours].
 1. [Testing](#testing)
 1. [Deployment](#deployment)
 1. [Updating content](#updating-content)
-	- [Quick workflow](#quick-workflow)
-    - [Full workflow](#full-workflow)
+1. [Updating the codebase](#updating-the-codebase)
 1. [Formatting content](#formatting-content)
 
 [11ty]: https://11ty.dev/
@@ -20,13 +19,13 @@ A static site, built with [11ty], for [Business Ours].
 
 1. Check to see if you have Node installed on your computer:
 
-    ```
+    ```shell
     node -v
     ```
 
 1. If necessary, install Node.js and a package manager, npm (requires [Homebrew]):
 
-    ```
+    ```shell
     brew install node
     ```
 
@@ -38,7 +37,7 @@ A static site, built with [11ty], for [Business Ours].
 
 1. Install the necessary dependencies for local development:
 
-    ```
+    ```shell
     bin/setup
     ```
 
@@ -48,7 +47,7 @@ To test locally:
 
 1. Start the server:
 
-    ```
+    ```shell
     npm run start
     ```
 
@@ -64,13 +63,13 @@ To test remotely:
 
 ## Deployment
 
-Updates to `origin/main` are automatically deployed to Netlify at https://businessours.netlify.app.
+Updates to `origin/main` are [automatically deployed](https://ours.bz) (via Netlify).
 
 To deploy elsewhere:
 
 1. Build the static site:
 
-    ```
+    ```shell
     npm run build
     ```
 
@@ -82,19 +81,11 @@ To deploy elsewhere:
 
 ## Updating content
 
-### Quick workflow
+Most content can be edited via the [content management system](https://ours.bz/admin).
 
-From the `main` branch:
+If you don't have login credentials, ask Keiran to create one.
 
-1. `git pull`
-
-1. Add/update recipe files in `/recipes`.
-
-1. Commit your changes.
-
-1. `git push`
-
-### Full Workflow
+## Updating the codebase
 
 From the `main` branch:
 
@@ -104,7 +95,7 @@ From the `main` branch:
 
 From your new branch:
 
-1. Add recipe files to `/recipes`.
+1. Modify files as needed.
 
 1. Preview your changes locally, and make changes until satisfied.
 
@@ -142,6 +133,6 @@ You're now ready to merge your branch. From `main`:
 
 ## Formatting content
 
-Content is written in [Markdown].
+Most content is written in [Markdown].
 
 [Markdown]: https://www.markdownguide.org/basic-syntax
