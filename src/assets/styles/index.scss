@@ -10,8 +10,14 @@
 @use 'elements/tables';
 @use 'elements/typography';
 
+@use 'objects/rack';
 @use 'objects/section';
 @use 'objects/site';
 
+@use 'components/button';
+@use 'components/logo';
+@use 'components/site-header';
+
+@use 'utilities/u-display';
 @use 'utilities/u-link';
 @use 'utilities/u-log';

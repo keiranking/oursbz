@@ -1,6 +1,6 @@
 const fs = require("fs");
 const markdownIt = require("markdown-it");
-// const svgContents = require("eleventy-plugin-svg-contents");
+const svgContents = require("eleventy-plugin-svg-contents");
 // const drafts = require("./src/config/plugins/drafts");
 
 // const posts = require('./src/config/collections/posts');
@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
 
-  // eleventyConfig.addPlugin(svgContents);
+  eleventyConfig.addPlugin(svgContents);
 	// eleventyConfig.addPlugin(drafts);
 
   // eleventyConfig.addCollection("posts", posts);

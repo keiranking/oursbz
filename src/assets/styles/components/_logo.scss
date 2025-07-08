@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+
+  path {
+    fill: var(--content-color);
+  }
+}
+
+.logo--header {
+  block-size: var(--spacing--double);
+}

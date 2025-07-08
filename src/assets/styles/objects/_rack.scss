@@ -1,0 +1,8 @@
+.rack {
+  display: flex;
+  align-items: center;
+}
+
+.rack--padded {
+  gap: var(--spacing);
+}

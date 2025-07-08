@@ -1,0 +1,24 @@
+@use '../settings/other' as settings;
+
+.site-header {
+  display: flex;
+  font-size: var(--font-size--small);
+  justify-content: space-between;
+  padding-inline: var(--spacing--quarter);
+}
+
+.site-header__logo--desktop {
+  display: none;
+
+  @media(min-width: settings.$breakpoint--desktop) {
+    display: block;
+  }
+}
+
+.site-header__logo--mobile {
+  display: block;
+
+  @media(min-width: settings.$breakpoint--desktop) {
+    display: none;
+  }
+}

@@ -1,17 +1,12 @@
-{%- if page.url != "/" %}
-  <header class="site__header section">
-    <nav class="section__content section__content--slim">
-      [Header]
-    </nav>
-  </header>
-{%- endif %}
+<header class="site__header site-header">
+  <a class="u-display--inline" href="{{ '/' | url }}" alt={{ metadata.title }}>
+      {{ "/src/assets/images/logo-symbol.svg" | svgContents("site-header__logo--mobile logo logo--header") | safe }}
+      {{ "/src/assets/images/logo-landscape.svg" | svgContents("site-header__logo--desktop logo logo--header") | safe }}
+  </a>
 
-{# <header>
-  <h1><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-
-  <ul>
-  {%- for entry in collections.all | eleventyNavigation %}
-    <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-  {%- endfor %}
-  </ul>
-</header> #}
+  <nav class="rack rack--padded">
+    <a class="u-link--incognito">For BIAs</a>
+    <a class="u-link--incognito">For Companies</a>
+    <a class="button">Let's talk</a>
+  </nav>
+</header>
