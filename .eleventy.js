@@ -1,9 +1,12 @@
 const fs = require("fs");
+
 const markdownIt = require("markdown-it");
 const svgContents = require("eleventy-plugin-svg-contents");
-// const drafts = require("./src/config/plugins/drafts");
 
+// const drafts = require("./src/config/plugins/drafts");
 // const posts = require('./src/config/collections/posts');
+
+const today = require('./src/config/shortcodes/today');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
@@ -14,6 +17,8 @@ module.exports = function(eleventyConfig) {
 	// eleventyConfig.addPlugin(drafts);
 
   // eleventyConfig.addCollection("posts", posts);
+
+  eleventyConfig.addShortcode('today', today);
 
   // Markdown settings
   let markdownLibrary = markdownIt({
