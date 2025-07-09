@@ -1,4 +1,4 @@
-@use '../settings/other' as settings;
+@use '../settings/other' as *;
 
 .site-header {
   display: flex;
@@ -10,7 +10,7 @@
 .site-header__logo--desktop {
   display: none;
 
-  @media(min-width: settings.$breakpoint--desktop) {
+  @media(min-width: $breakpoint--desktop) {
     display: block;
   }
 }
@@ -18,7 +18,7 @@
 .site-header__logo--mobile {
   display: block;
 
-  @media(min-width: settings.$breakpoint--desktop) {
+  @media(min-width: $breakpoint--desktop) {
     display: none;
   }
 }

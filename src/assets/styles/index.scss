@@ -10,11 +10,12 @@
 @use 'elements/tables';
 @use 'elements/typography';
 
-@use 'objects/rack';
+@use 'objects/inline-list';
 @use 'objects/section';
 @use 'objects/site';
 
 @use 'components/button';
+@use 'components/hero';
 @use 'components/logo';
 @use 'components/site-footer';
 @use 'components/site-header';

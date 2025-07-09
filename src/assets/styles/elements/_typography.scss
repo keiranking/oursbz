@@ -18,6 +18,7 @@ h4,
 h5,
 h6 {
   color: var(--accent-color);
+  font-family: var(--heading-font-family);
   font-size: var(--font-size);
   font-weight: var(--font-weight--bold);
   letter-spacing: var(--letter-spacing--tight);
@@ -27,6 +28,11 @@ h6 {
 
 h1 {
   font-size: var(--font-size--xlarge);
+  line-height: var(--line-height--sardine);
+
+  @media(min-width: $breakpoint--desktop) {
+    font-size: var(--font-size--xxlarge);
+  }
 }
 
 p {
