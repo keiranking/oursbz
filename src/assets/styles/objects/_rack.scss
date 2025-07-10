@@ -1,0 +1,16 @@
+@use '../settings/other' as *;
+
+.rack {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: var(--spacing);
+
+  @media(min-width: $breakpoint--desktop) {
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+  }
+}
+
+.rack--double-spaced {
+  gap: var(--spacing--double);
+}

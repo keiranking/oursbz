@@ -1,3 +1,4 @@
+const yaml = require("js-yaml");
 const fs = require("fs");
 
 const markdownIt = require("markdown-it");
@@ -12,6 +13,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
   eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
+
+	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.addPlugin(svgContents);
 	// eleventyConfig.addPlugin(drafts);

@@ -1,0 +1,58 @@
+.form {
+  [type="email"],
+  [type="text"] {
+    border-width: 0 0 var(--border-width) 0;
+    border-radius: 0;
+    padding-inline: 0;
+  }
+
+  input:required ~ label {
+    &::after {
+      content: '*';
+    }
+  }
+}
+
+.form__labeled-input {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto minmax(1.5em, auto);
+  grid-template-areas: "input validation";
+  gap: var(--spacing--quarter);
+
+  input {
+    grid-area: input;
+    margin-block-end: 0;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    grid-area: input;
+    margin-block-end: 0;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: 0.25s ease all;
+  }
+
+  // Move label above input when input has value or is focused
+  input:not(:placeholder-shown) ~ label,
+  input:focus ~ label {
+    font-size: 80%;
+    transform: translateY(-2.5em);
+  }
+
+  input ~ .form__validation {
+    visibility: hidden;
+  }
+
+  input:not(:placeholder-shown):invalid ~ .form__validation {
+    visibility: visible;
+  }
+}
+
+.form__validation {
+  color: var(--error-color);
+  font-size: var(--font-size--small);
+}

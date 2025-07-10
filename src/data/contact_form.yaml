@@ -1,0 +1,10 @@
+error_messages:
+  incomplete_required_field: Please complete this required field.
+  invalid_email_field: Please enter a valid email address.
+field_names:
+  name: entry.849500621
+  email: entry.1059580628
+  org: entry.1499744587
+  bia: entry.84394421
+  message: entry.1273793541
+submit_url: https://docs.google.com/forms/d/1Y3Z7xmIk6SU64y70pCtRR0BeSo3p791XmRNKUeZVXfc/formResponse

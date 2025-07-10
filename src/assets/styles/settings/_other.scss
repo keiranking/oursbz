@@ -1,12 +1,12 @@
 :root {
   // Colors
-  --c-ash: #d9d9d9;
-  --c-battleship: #9d9d9d;
-  --c-charcoal: #666666;
-  --c-diesel: #333333;
+  // --c-ash: #d9d9d9;
+  // --c-battleship: #9d9d9d;
+  // --c-charcoal: #666666;
+  // --c-diesel: #333333;
 
-  --c-purple-start: #cbc4f7;
-  --c-purple-end: #eeb3fd;
+  // --c-purple-start: #cbc4f7;
+  // --c-purple-end: #eeb3fd;
 
   --background-color: #1e1e1e;
   --content-color: #ffffff;
@@ -15,9 +15,9 @@
 
   --action-color: var(--content-color);
   --action-color--hover: rgba(var(--content-color-rgb), 0.75);
-  --highlight-color: rgba(var(--content-color-rgb), 0.066);
-  // --subtle-color: rgba(var(--content-color-rgb), 0.33);
-  --subtle-color: var(--c-diesel);
+  --error-color: var(--content-color);
+  --highlight-color: rgba(var(--content-color-rgb), 0.1);
+  --subtle-color: rgba(var(--content-color-rgb), 0.33);
 
   // Typography
   --font-family: "Ours Sans", system-ui, sans-serif;

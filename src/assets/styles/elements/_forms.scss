@@ -12,19 +12,20 @@ fieldset {
 
 legend {
   font-weight: 600;
-  margin-bottom: var(--spacing--half);
+  margin-block-end: var(--spacing--half);
   padding: 0;
 }
 
 label {
   display: block;
-  font-weight: 600;
-  margin-bottom: var(--spacing--half);
+  font-weight: 400;
+  margin-block-end: var(--spacing--half);
 }
 
 input,
 select,
 textarea {
+  color: var(--content-color);
   display: block;
   font-family: var(--font-family);
   font-size: 1rem;
@@ -52,7 +53,7 @@ textarea {
   border-radius: var(--border-radius);
   box-shadow: var(--form-box-shadow);
   box-sizing: border-box;
-  margin-bottom: var(--spacing--half);
+  margin-block-end: var(--spacing--half);
   padding: calc(var(--spacing) / 3);
   transition: border-color var(--duration) var(--timing);
   width: 100%;
@@ -86,16 +87,16 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: var(--spacing--half);
+  margin-inline-end: var(--spacing--half);
 }
 
 [type="file"] {
-  margin-bottom: var(--spacing--half);
+  margin-block-end: var(--spacing--half);
   width: 100%;
 }
 
 select {
-  margin-bottom: var(--spacing--half);
+  margin-block-end: var(--spacing--half);
   width: 100%;
 }
 

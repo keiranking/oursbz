@@ -1,0 +1,88 @@
+<form
+  class="stack form"
+  target="_blank"
+  method="POST"
+  action="{{ contact_form.submit_url }}"
+>
+  {% include "partials/_honeypot.njk" %}
+
+  <div class="form__labeled-input">
+    <input
+      id="name"
+      name="{{ contact_form.field_names.name }}"
+      required
+      placeholder=""
+      type="text"
+      value=""
+    >
+
+    <label for="name">Name</label>
+
+    <div class="form__validation">
+      {{ contact_form.error_messages.incomplete_required_field }}
+    </div>
+  </div>
+
+  <div class="form__labeled-input">
+    <input
+      id="email"
+      name="{{ contact_form.field_names.email }}"
+      required
+      placeholder=""
+      type="email"
+      value=""
+    >
+
+    <label for="email">Email</label>
+
+    <div class="form__validation">
+      {{ contact_form.error_messages.invalid_email_field }}
+    </div>
+  </div>
+
+  <div class="form__labeled-input">
+    <input
+      id="org"
+      name="{{ contact_form.field_names.org }}"
+      placeholder=""
+      type="text"
+      value=""
+    >
+
+    <label for="org">Business / Organization</label>
+  </div>
+
+  <div class="form__labeled-input">
+    <input
+      id="bia"
+      name="{{ contact_form.field_names.bia }}"
+      placeholder=""
+      list="bias"
+      type="text"
+      value=""
+      autocomplete="off"
+    >
+
+    <datalist id="bias">
+      {%- for bia in bias -%}
+        <option value="{{ bia.name }}">
+      {%- endfor -%}
+    </datalist>
+
+    <label for="bia">BIA</label>
+  </div>
+
+  <div>
+    <label for="message" class="u-display--none">Message</label>
+
+    <textarea
+      id="message"
+      name="{{ contact_form.field_names.message }}"
+      rows=7
+      required
+      placeholder="How can we help?"
+    ></textarea>
+  </div>
+
+  <button class="button" type="submit">Get advice</button>
+</form>

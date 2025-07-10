@@ -1,8 +1,7 @@
 .button {
   appearance: none;
   background-color: var(--action-color);
-  border: var(--border);
-  border-color: var(--action-color);
+  border: none;
   border-radius: var(--border-radius);
   color: var(--background-color);
   cursor: pointer;
@@ -33,7 +32,6 @@
 }
 
 .button--secondary {
-  background-color: var(--subtle-color);
-  border-color: var(--subtle-color);
+  background-color: var(--highlight-color);
   color: var(--content-color);
 }
