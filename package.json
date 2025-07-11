@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "build": "sass src/assets/styles:_site/css & eleventy",
-    "start": "npx sass src/assets/styles:_site/css --watch & npx @11ty/eleventy --serve"
+    "build": "npm run build:js && npm run build:css && eleventy",
+    "build:css": "sass src/assets/styles:_site/css",
+    "build:js": "npx esbuild src/app.js --bundle --outfile=_site/app.js --minify",
+
+    "start": "npx concurrently \"npm run watch:js\" \"npm run watch:css\" \"npx @11ty/eleventy --serve\"",
+    "watch:css": "npx sass src/assets/styles:_site/css --watch",
+    "watch:js": "npx esbuild src/app.js --bundle --outfile=_site/app.js --watch"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +23,11 @@
     "js-yaml": "^4.1.0",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
-    "sass": "^1.89.2"
+    "sass": "^1.89.2",
+    "stimulus": "^3.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "esbuild": "^0.25.6"
   }
 }
