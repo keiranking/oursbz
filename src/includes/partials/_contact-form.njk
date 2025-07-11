@@ -1,5 +1,7 @@
 <form
   class="stack form"
+  data-controller="contact-form"
+  data-action="submit->contact-form#validate"
   target="_blank"
   method="POST"
   action="{{ contact_form.submit_url }}"
@@ -9,6 +11,7 @@
   <div class="form__labeled-input">
     <input
       id="name"
+      data-contact-form-target="name"
       name="{{ contact_form.field_names.name }}"
       required
       placeholder=""
@@ -26,6 +29,8 @@
   <div class="form__labeled-input">
     <input
       id="email"
+      data-action="input->contact-form#validateEmail"
+      data-contact-form-target="email"
       name="{{ contact_form.field_names.email }}"
       required
       placeholder=""
@@ -43,6 +48,7 @@
   <div class="form__labeled-input">
     <input
       id="org"
+      data-contact-form-target="org"
       name="{{ contact_form.field_names.org }}"
       placeholder=""
       type="text"
@@ -55,6 +61,7 @@
   <div class="form__labeled-input">
     <input
       id="bia"
+      data-contact-form-target="bia"
       name="{{ contact_form.field_names.bia }}"
       placeholder=""
       list="bias"
@@ -63,7 +70,7 @@
       autocomplete="off"
     >
 
-    <datalist id="bias">
+    <datalist id="bias" data-contact-form-target="biaList">
       {%- for bia in bias -%}
         <option value="{{ bia.name }}">
       {%- endfor -%}
@@ -77,6 +84,7 @@
 
     <textarea
       id="message"
+      data-contact-form-target="message"
       name="{{ contact_form.field_names.message }}"
       rows=7
       required

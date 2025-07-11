@@ -47,6 +47,7 @@
     visibility: hidden;
   }
 
+  input[aria-invalid="true"] ~ .form__validation,
   input:not(:placeholder-shown):invalid ~ .form__validation {
     visibility: visible;
   }
