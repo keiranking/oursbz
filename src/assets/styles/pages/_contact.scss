@@ -1,0 +1,5 @@
+@use '../tools/unordered-list' as *;
+
+.contact {
+  @include unordered-list;
+}

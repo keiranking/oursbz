@@ -1,6 +1,8 @@
 @use 'settings/fonts';
 @use 'settings/other';
 
+@use 'tools/unordered-list';
+
 @use 'generic/normalize';
 
 @use 'elements/forms';
@@ -15,6 +17,8 @@
 @use 'objects/section';
 @use 'objects/site';
 @use 'objects/stack';
+
+@use 'pages/contact';
 
 @use 'components/button';
 @use 'components/card';

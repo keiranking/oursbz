@@ -16,7 +16,7 @@ export default class extends Controller {
   }
 
   isSpam = this.sugarcubeTargets.some(sugarcube => sugarcube.value !== '');
-  
+
   validateEmail() {
     this.hasValidEmail = this.isEmailAddress(this.emailTarget.value);
     this.emailTarget.setAttribute("aria-invalid", String(!this.hasValidEmail));
