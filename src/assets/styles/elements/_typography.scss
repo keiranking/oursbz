@@ -66,9 +66,8 @@ code {
 }
 
 hr {
-  border-bottom: var(--border);
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
+  border-block-end: var(--border);
+  border-block-start: 0;
+  border-inline: 0;
   margin: var(--spacing) 0;
 }

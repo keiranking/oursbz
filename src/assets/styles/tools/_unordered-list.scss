@@ -2,11 +2,11 @@
   ul {
     font-weight: var(--font-weight--body);
     list-style: none;
-    padding-bottom: var(--spacing--half);
-    padding-left: calc(0.75 * var(--spacing));
+    padding-block-end: var(--spacing--half);
+    padding-inline-start: calc(0.75 * var(--spacing));
 
     li {
-      margin-bottom: var(--spacing--eighth);
+      margin-block-end: var(--spacing--eighth);
       position: relative;
 
       &::before {
