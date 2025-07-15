@@ -8,7 +8,14 @@
 
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-    <script src="/app.js" defer></script>
+
+    <script src="/js/app.js" defer></script>
+
+    {% if carousels %}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="/js/carousel.js" defer></script>
+    {% endif %}
   </head>
 
 

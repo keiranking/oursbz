@@ -5,11 +5,10 @@
   "scripts": {
     "build": "npm run build:js && npm run build:css && eleventy",
     "build:css": "sass src/assets/styles:_site/css",
-    "build:js": "npx esbuild src/app.js --bundle --outfile=_site/app.js --minify",
-
+    "build:js": "npx esbuild src/config/app.js src/config/carousel.js --bundle --outdir=_site/js --minify",
     "start": "npx concurrently \"npm run watch:js\" \"npm run watch:css\" \"npx @11ty/eleventy --serve\"",
     "watch:css": "npx sass src/assets/styles:_site/css --watch",
-    "watch:js": "npx esbuild src/app.js --bundle --outfile=_site/app.js --watch"
+    "watch:js": "npx esbuild src/config/app.js src/config/carousel.js --bundle --outdir=_site/js --watch"
   },
   "keywords": [],
   "author": "",

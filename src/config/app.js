@@ -1,5 +1,5 @@
 import { Application } from "stimulus";
-import ContactFormController from "./config/controllers/contact_form_controller";
+import ContactFormController from "./controllers/contact_form_controller";
 
 const application = Application.start();
 console.log("Stimulus started.");

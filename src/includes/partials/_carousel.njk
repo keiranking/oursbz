@@ -1,0 +1,9 @@
+<div class="swiper" data-swiper-options="{{ options | dump | escape }}">
+  <div class="swiper-wrapper">
+    {% for slide in slides %}
+      <div class="swiper-slide">
+        <img src="{{ slide.url }}" alt="{{ slide.description or 'Slide' }}">
+      </div>
+    {% endfor %}
+  </div>
+</div>
