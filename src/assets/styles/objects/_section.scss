@@ -28,6 +28,12 @@
   }
 }
 
+.section__content--flush {
+  max-width: none !important;
+  margin-inline: calc(-1 * var(--spacing)) !important;
+  width: 100vw !important;
+}
+
 .section__content--slim {
   max-width: var(--width--article);
 }
