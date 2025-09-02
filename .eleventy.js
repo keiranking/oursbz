@@ -14,7 +14,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "admin": "admin" });
 
-	eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+  eleventyConfig.addPassthroughCopy({ "src/content/images": "content/images" });
+
+  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
   eleventyConfig.addPlugin(svgContents);
 	// eleventyConfig.addPlugin(drafts);
