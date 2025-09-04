@@ -24,7 +24,7 @@
   width: 100%;
 
   & + & {
-    margin-block-start: var(--spacing--half);
+    margin-block-start: var(--spacing);
   }
 }
 

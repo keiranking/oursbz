@@ -2,6 +2,7 @@ const yaml = require("js-yaml");
 const fs = require("fs");
 
 const markdownIt = require("markdown-it");
+const { RenderPlugin } = require("@11ty/eleventy");
 const svgContents = require("eleventy-plugin-svg-contents");
 
 // const drafts = require("./src/config/plugins/drafts");
@@ -18,6 +19,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
+	eleventyConfig.addPlugin(RenderPlugin);
   eleventyConfig.addPlugin(svgContents);
 	// eleventyConfig.addPlugin(drafts);
 

@@ -55,3 +55,33 @@ carousels:
     {{ carousel(carousels.ideabook.slides, carousels.ideabook.options) }}
   </div>
 </section>
+
+<section class="section section--padded">
+  <div class="section__content">
+    <div class="stack stack--quadruple-spaced">
+      <div class="rack">
+        <div></div>
+
+        <div>
+          <p class="flytitle">For BIA organizers</p>
+
+          {% renderFile "./src/includes/snippets/_areacare-pitch.md" %}
+
+          <a class="button button--secondary" href="/contact">Explore AreaCare</a>
+        </div>
+      </div>
+
+      <div class="rack">
+        <div>
+          <p class="flytitle">For business owners</p>
+
+          {% renderFile "./src/includes/snippets/_angel-pitch.md" %}
+
+          <a class="button button--secondary" href="/contact">Become an Angel</a>
+        </div>
+
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>

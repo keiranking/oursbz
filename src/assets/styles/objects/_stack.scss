@@ -3,3 +3,11 @@
   grid-auto-rows: auto;
   gap: var(--spacing);
 }
+
+.stack--double-spaced {
+  gap: var(--spacing--double);
+}
+
+.stack--quadruple-spaced {
+  gap: var(--spacing--quadruple);
+}

@@ -35,6 +35,10 @@ h1 {
   }
 }
 
+h2 {
+  font-size: var(--font-size--large);
+}
+
 p {
   margin: 0 0 var(--spacing--half);
   font-weight: var(--font-weight--body);
