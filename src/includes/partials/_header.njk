@@ -1,7 +1,7 @@
 <header class="site__header site-header">
   <a class="u-display--inline" href="{{ '/' | url }}" alt={{ metadata.title }}>
-      {{ "/src/assets/images/logo-symbol.svg" | svgContents("site-header__logo--mobile logo logo--header") | safe }}
-      {{ "/src/assets/images/logo-landscape.svg" | svgContents("site-header__logo--desktop logo logo--header") | safe }}
+      {# "/src/assets/images/logo-symbol.svg" | svgContents("site-header__logo--mobile logo logo--header") | safe #}
+      {{ "/src/assets/images/logo-landscape.svg" | svgContents("logo logo--header") | safe }}
   </a>
 
   <nav class="inline-list inline-list--padded">

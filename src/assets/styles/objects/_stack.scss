@@ -1,13 +1,11 @@
 .stack {
+  --stack-spacing: var(--spacing);
+
   display: grid;
   grid-auto-rows: auto;
-  gap: var(--spacing);
+  gap: var(--stack-spacing);
 }
 
 .stack--double-spaced {
-  gap: var(--spacing--double);
-}
-
-.stack--quadruple-spaced {
-  gap: var(--spacing--quadruple);
+  --stack-spacing: var(--spacing--double);
 }

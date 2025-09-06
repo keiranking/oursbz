@@ -16,6 +16,7 @@
 @use 'objects/site';
 @use 'objects/stack';
 
+@use 'components/background-promo-image';
 @use 'components/button';
 @use 'components/card';
 @use 'components/flytitle';
@@ -25,6 +26,7 @@
 @use 'components/site-footer';
 @use 'components/site-header';
 
+@use 'utilities/u-color';
 @use 'utilities/u-display';
 @use 'utilities/u-link';
 @use 'utilities/u-log';

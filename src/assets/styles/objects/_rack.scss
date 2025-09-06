@@ -1,9 +1,11 @@
 @use '../settings/other' as *;
 
 .rack {
+  --rack-spacing: var(--spacing);
+
   display: grid;
   grid-auto-rows: auto;
-  gap: var(--spacing);
+  gap: var(--rack-spacing);
 
   @media(min-width: $breakpoint--desktop) {
     grid-auto-columns: 1fr;
@@ -12,5 +14,5 @@
 }
 
 .rack--double-spaced {
-  gap: var(--spacing--double);
+  --rack-spacing: var(--spacing--double);
 }

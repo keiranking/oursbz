@@ -1,0 +1,16 @@
+.background-promo-image {
+  --background-image-size: min(36rem, 100vw);
+  --background-image-url: none;
+  --background-image-alignment: left;
+  --background-image-x-offset: -15rem;
+
+  background-image: var(--background-image-url);
+  background-position-x: var(--background-image-alignment) var(--background-image-x-offset);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: var(--background-image-size);
+}
+
+.background-promo-image--right {
+  --background-image-alignment: right;
+}

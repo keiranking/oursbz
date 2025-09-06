@@ -8,12 +8,15 @@
   // --c-purple-start: #cbc4f7;
   // --c-purple-end: #eeb3fd;
 
+  --c-blue-start: #add8e6;
+  --c-gold-start: #e6d8ad;
+
   --background-color: #1e1e1e;
   --content-color: #ffffff;
   --content-color-rgb: 255, 255, 255;
   --accent-color: var(--content-color);
 
-  --action-color: var(--content-color);
+  --action-color: var(--accent-color);
   --action-color--hover: rgba(var(--content-color-rgb), 0.75);
   --error-color: var(--content-color);
   --highlight-color: rgba(var(--content-color-rgb), 0.1);
